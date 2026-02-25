@@ -1,30 +1,12 @@
-import React from "react";
-import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Watch from "./pages/Watch";
-import Search from "./pages/Search";
-import MyList from "./pages/MyList";
-import { Toaster } from "./components/ui/sonner";
+import React from 'react';
+import './App.css'; // You'll need to create this CSS file later
 
 function App() {
+  // Your routing and component imports (Navbar, Home, etc.) go here
   return (
     <div className="App">
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/watch/:id" element={<Watch />} />
-          <Route path="/search" element={<Search />} />
-          <Route path="/my-list" element={<MyList />} />
-          <Route path="/tv-shows" element={<Home />} />
-          <Route path="/movies" element={<Home />} />
-        </Routes>
-        <Toaster />
-      </BrowserRouter>
+      <h1>Hello Cinewave Streaming!</h1>
+      {/* You must manually add your recovered/re-written components here */}
     </div>
   );
 }
